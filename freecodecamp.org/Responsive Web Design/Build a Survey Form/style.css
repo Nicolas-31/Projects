@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: darkgreen;
+    text-align: center; 
+    width: auto;
+    height: auto; 
+}
+
+
+
+#title{
+    color: yellow;
+    font-size: 2.25em;
+    text-align: center;
+}
+
+
+
+
+p{
+  color: yellow;
+  font-size: 1.25em;
+  font-style: italic;  
+  text-align: center;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+ 
+
+form{
+  background-color: whitesmoke;
+  max-width: 550px; 
+  margin: 0 auto;
+  padding: 20px 20px; 
+  box-shadow: 10px 10px 10px gold; 
+  border-radius: 5px;
+}
+form:hover{
+   color: goldenrod; 
+   font-style: italic;
+}
+
+.form-control{
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.form-control label{
+  display: block; 
+  margin-bottom:5px;
+}
+
+.form-control input, .form-control select, .form-control textarea
+{
+  display: block; 
+  width: 100%;
+  border: 5px solid lavender; 
+  border-radius: 2x; 
+  padding: 8px;
+  font-size: 16px;
+  font-family: inherit; 
+
+}
+
+
+.form-control input[type="radio"], .form-control input[type="checkbox"]{
+  display: inline-block;
+  width: auto; 
+}
+
+#submit{
+  width: 100%;
+  display: block; 
+  background-color: gold; 
+  border: 5px solid golid; 
+  border-radius: 2px; 
+  padding: 8px; 
+  font-size: 16px;
+  font-family: inherit; 
+  box-shadow: 10px 10px goldenrod;
+}
+
+#submit:hover{
+  background-color: lawngreen;
+}
+
