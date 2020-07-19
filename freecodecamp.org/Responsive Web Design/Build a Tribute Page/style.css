@@ -1,0 +1,67 @@
+#main{
+    text-align: center;
+    background-color: yellowgreen;
+}
+
+
+#title{
+    text-align: center; 
+    color: black; 
+}
+
+h1:hover{
+    color: darkblue;
+}
+
+
+h4{
+    text-align: center; 
+    color: black; 
+}
+
+h4:hover{
+    color: darkblue; 
+    font-style: italic;
+}
+
+#img-div{
+ align-content: center;
+}
+
+#image:hover{ 
+    outline: 2px solid black; 
+    width: 80%;
+}
+
+#image{
+   margin: 1rem auto;
+   display: block;
+   max-width: 70%;
+   height: auto; 
+   
+}
+
+
+
+#img-caption{
+    text-align: center;
+    color: red;
+}
+
+
+p:hover{
+    color: darkblue; 
+    font-style: italic; 
+}
+
+
+#tribute-link{
+   display: inline;
+}
+
+
+#footer {
+   display: flex; 
+   flex-direction: row;
+   color: red; 
+}
