@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+    background-color: lightgrey;
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 8rem;
+    font-family: inherit;
+}
+
+h1:hover{
+    color:brown; 
+    font-style: oblique;
+    
+}
+
+#form {
+    display: block;
+    max-width: 100%;
+    width: 30rem;
+    margin: 0 auto;
+}
+
+#email{
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 0.5rem; 
+}
+
+
+
+#submit{
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 0.5rem; 
+    border: 1px solid goldenrod;
+    border-radius: 3px;
+}
+
+#submit:hover{
+    color: goldenrod;
+}
+
+
+nav{
+    background-color: lightgrey;
+    display: flex; 
+    justify-content: right;
+    padding: 10px; 
+    align-self: flex-end;
+   
+}
+
+.nav-link{
+   color: black; 
+   text-decoration: none;
+   padding: 0.5rem; 
+   align-items: right;
+}
+
+.nav-link:hover{
+    color: brown; 
+    font-style: oblique;
+}
+
+
+
+header{
+  
+    background-color: lightgrey;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+}
+
+
+#header-img{
+    width: 5em; 
+    height: 5em; 
+    display: inline-flex; 
+}
+
+.logo-text{
+    text-align: left;
+    color: blue; 
+    align-self: center;
+    vertical-align: center;
+
+}
+
+#headerflex{
+    display: flex; 
+    justify-content: center;
+    align-self: center;
+}
+
+
+#mid-flex{
+    flex-grow: 1; 
+}
+
+
+
+/*features*/
+
+#features{
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.grid {
+    display: flex;
+}
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    width: 20vw;
+}
+
+#features .feat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8rem;
+    width: 80vw;
+}
+
+#features h2, p {
+    margin: 0;
+    font-family: inherit;
+}
+
+#features h2:hover {
+    color: brown;
+    font-style: oblique;
+}
+
+#features p:hover {
+    color: brown;
+    font-style: oblique;
+}
+
+.icon i{
+    font-size: 5rem;
+    color: goldenrod;
+}
+
+.icon i:hover{
+    
+    color: brown;
+}
+
+@media (max-width: 50rem) {
+  #features {
+        margin-top: 100%;
+    }
+}
+
+
+/*how it works*/
+
+#how-it-works{
+    margin-top: 5rem; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#how-it-works iframe 
+{  
+   width: 100%; 
+   max-width: 500px;
+}
+
+
+
+/*pricing*/
+
+#pricing {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/5);
+    margin: 100px;
+    border: 1px solid rgb(0,0,0);
+    border-radius: 1px;
+  }
+  
+  .products > .price {
+    background-color: goldenrod;
+    color: brown;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: inherit; 
+  }
+  
+  .products > h2 {
+    margin-top: 15px;
+  }
+  .products > h2:hover {
+    color: brown; 
+    font-style: italic;
+  }
+  
+  
+  .products > ul {
+    margin: 1rem 0;
+    font-family: inherit;
+  }
+  
+  .products > ul > li {
+    padding: 5px 0;
+    font-family: inherit;
+  }
+ 
+  .products > ul > li:hover {
+    color: brown; 
+    font-style: italic;
+  }
+
+  .products > img {
+      display: flex; 
+      border: 3px solid goldenrod;
+      border-radius: 3px; 
+      box-shadow: goldenrod;
+  }
+
+
+footer{
+    margin-top: 5rem;
+    text-align: center;
+    font-family: inherit;
+}
+
+
+footer:hover{
+    color: brown; 
+    font-style: oblique;
+}
