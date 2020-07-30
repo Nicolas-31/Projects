@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Build a Technical Documentation Page</title>
+</head>
+
+<body>
+<!--start of nav-->  
+ <nav id="navbar">
+ <header>C# Documentation</header>
+ <ul>
+     <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+     <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+     <li><a class="nav-link" href="#Variables">Variables</a></li>
+     <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+     <li><a class="nav-link" href="#Initializing_variables">Initializing Variables</a></li>
+     <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+     <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+     <li><a class="nav-link" href="#Constants">Constants</a></li>
+     <li><a class="nav-link" href="#Data_types">Data types</a></li>
+     <li><a class="nav-link" href="#if_else_statement">if else statement</a></li>
+     <li><a class="nav-link" href="#while_statement">while statement</a></li>
+     <li><a class="nav-link" href="#for_statement">for statement</a></li>
+     <li><a class="nav-link" href="#Function_declarations">Function declarations</a></li>
+     <li><a class="nav-link" href="#Reference">Reference</a></li>
+ </ul>
+ </nav>
+<!--end of nav-->
+
+<main id="main-doc">
+
+<!--Introduction--> <!--taken from tutorialpoint.com-->
+<section class="main-section" id="Introduction">
+<header>Introduction</header>
+<article>
+<p>
+    C# is a simple, modern, general-purpose, object-oriented programming language developed by Microsoft 
+    within its .NET initiative led by Anders Hejlsberg. This tutorial will teach you basic C# programming 
+    and will also take you through various advanced concepts related to C# programming language.
+</p>
+</article>
+</section>
+<!--End of Introduction-->
+
+
+<!--Hello World--> <!--taken from tutorialpoint.com-->
+<section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+        <p>To get started with writing C#, open the 
+            visual studio code and choose type of program 
+            "console" and write your first "Hello World"
+             C# code.
+        </p>
+        
+        <p>A C# program consist of the following parts-</p>
+        <ul>
+            <li>Namespace</li>
+            <li>A class</li>
+            <li>Class Methods</li>
+            <li>Class attributes</li>
+            <li>A Main method</li>
+            <li>Statements and Expressions</li>
+            <li>Comments</li>
+        </ul>
+
+        <code>
+            using System;
+
+            namespace HelloWorldApplication {
+            class HelloWorld {
+            static void Main(string[] args) {
+             /* my first program in C# */
+            Console.WriteLine("Hello World");
+            Console.ReadKey();
+                   }
+                }
+            }
+        </code>
+        <p>The above code will print out</p><code>Hello World</code>
+    </article>
+    
+</section>
+<!--end of hello world-->
+
+<!--Variables--> <!--taken from tutorialpoint.com-->
+<section class="main-section" id="Variables">
+    <header>Variables</header>
+    <article>  
+    <p>A varaible is nothing but a name given to storage area that our programs can manipulate.
+       Each variable in C# has a specific type which determines the size and layout of the variable's 
+       memory the range of values that can be stored within that memory and the set of operations that 
+       can be applied to the variable. The basic value types provided in C# can be categorized as - 
+    </p>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Example</th> 
+            
+          </tr>
+
+          <tr>
+            <td>Integral types</td>
+            <td>sbyte, byte, short, ushort, int, uint, long, ulong, and char</td>
+          </tr>
+
+          <tr>
+            <td>Floating point types</td>
+            <td>float and double</td>
+          </tr>
+
+          <tr>
+              <td>Decimal types</td>
+              <td>decimal</td>
+          </tr>
+
+          <tr>
+              <td>Boolean types</td>
+              <td>true of false values as assigned</td>
+          </tr>
+
+          <tr>
+              <td>Nullable types</td>
+              <td>Nullable data types </td>
+          </tr>
+    </table>
+
+    <p>C# also allows defining other value types of variable such as enum and reference types 
+        such as <b>enum</b> and reference types of variables such as <b>class</b>.
+    </p>
+</article>
+</section>
+<!--End of Variables-->
+
+
+<!--Declaring variables --->
+<section class="main-section" id="Declaring_variables">
+    <header>Declaring variables</header>
+    <article>
+    <p>Syntax for variable definition in C# is - </p>
+    <code>
+      data_type variable_list; 
+    </code>
+    
+    <p>Here, data_type must be a valid C# data type including char, int, float, double, or 
+        any user-defined data type, and variable_list may consists of one oor more identifier 
+        names seperated by commas. Some valid variable definitions are shown here - 
+    </p>
+
+    <code>
+        int i, j, k; 
+        char c, ch; 
+        float f, salary; 
+        double d; 
+    </code>
+</article>
+</section>
+<!--End of Declaring variables-->
+
+
+<!--Initializng variables --->
+<section class="main-section" id="Initializing_variables">
+   <header>Initializing Variables</header>
+   <article>
+    <p>Variables can be initialized in their declaration. The initalizer consists of an equal sign
+       followed by a constant expression as -
+    </p>
+    <code> data_type variable_name = value</code>
+    
+    <p>Some examples are-</p>
+
+    <code>
+        int d = 3, f = 5;    /* initializing d and f. */
+        byte z = 22;         /* initializes z. */
+        double pi = 3.14159; /* declares an approximation of pi. */
+        char x = 'x';        /* the variable x has the value 'x'. */
+    </code>
+    <p> 
+        It is a good programming practice to initialize variables properly, otherewise sometimes 
+        program may produce unexpected result. 
+    </p>
+</article>
+</section>
+<!--End of Declaring variables-->
+
+
+<!--Variable scope-->
+<section class="main-section" id="Variable_scope">
+    <header>Variable scope</header>
+    <article>
+    <p>
+        The scope of a variable is a region of code that indicates where the variables are being
+        accessed.<br>
+        
+        A local variable is used where the scope of the variable is within the method in which it 
+        is declared. They can be used only by statements that are inside that function or block of code.
+    </p>
+    <code>
+        using System;
+        public class Program {
+           public static void Main() {
+              int a;
+              a = 100;
+              // local variable
+              Console.WriteLine("Value:"+a);
+           }
+        }
+    </code>
+    <p> the above code will output <code>Value:100</code></p>
+</article>
+</section>
+<!--end of Variable scope-->
+
+
+<!--Global variables -->
+<section class="main-section" id="Global_variables">
+    <header>Global variables</header>
+    <article>
+    <p>
+        C# do not support global variables directly and the scope resolution operator used 
+        in C++ for global variables is related to namespaces. It is called global namespace alias.
+        <br>
+        <br>
+        If you have a type that share an identifier in different namespace, then to identify them use
+        the scope resolution operator. For example, to reference System.Console class, use the global namespace 
+        alias with the scope resolution operator −
+    </p>
+    <code>global::System.Console</code>
+    <p>Example</p>
+    <code>
+        using myAlias = System.Collections;
+        namespace Program {
+            class Demo {
+                static void Main() {
+                    myAlias::Hashtable hTable = new myAlias::Hashtable();
+            hTable.Add("A", "1");
+            hTable.Add("B", "2");
+            hTable.Add("C", "3");
+            foreach (string str in h.Keys) {
+                global::System.Console.WriteLine(str + " " + h[n]);
+                    }
+                }
+            }
+        }
+    </code>
+</article>
+</section>
+<!--End of Global variables -->
+
+
+<!--Constants-->
+<section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+    <p>
+        Constants are defined using the const keyword. Syntax for defining a constant is −
+    </p>
+    <code>
+        const data_type constant_name= value;
+    </code>
+    <p>
+        The following program demonstrates defining and using a constant in your program −
+    </p>
+    <code>
+using System;
+
+namespace DeclaringConstants {
+   class Program {
+      static void Main(string[] args) {
+         const double pi = 3.14159;   
+            
+         // constant declaration 
+         double r;
+         Console.WriteLine("Enter Radius: ");
+         r = Convert.ToDouble(Console.ReadLine());
+            
+         double areaCircle = pi * r * r;
+         Console.WriteLine("Radius: {0}, Area: {1}", r, areaCircle);
+         Console.ReadLine();
+      }
+   }
+}
+    </code>
+    <p>
+        When the above code is compiled and
+         executed, it produces the following result −
+    </p>
+    <code>
+        Enter Radius: 
+        3
+        Radius: 3, Area: 28.27431
+    </code>
+</article>
+</section>
+
+<!--End of Constants-->
+
+
+<section class="main-section" id="Data_types">
+    <header>Data types</header>
+    <article>
+        <p>The variables in C#, are organized into 3 types</p>
+        <ul>
+            <li>Value types</li>
+            <li>Reference types</li>
+            <li>Pointer types</li>
+        </ul>
+
+    <b>Value type</b> variables can be assigned a value directly. 
+    They are derived from the class System.ValueType. C# supports
+    the followng value types-
+    <table>
+        <tr>
+            <td>Type</td>
+            <td>Represents</td>
+            <td>Range</td>
+            <td>Default Value</td>
+        </tr>
+
+        <tr>
+            <td>bool</td>
+            <td>Boolean value</td>
+            <td>True or False</td>
+            <td>False</td>
+        </tr>
+
+        <tr>
+            <td>byte</td>
+            <td>8-bit unsigned integer</td>
+            <td>0 to 255</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>char</td>
+            <td>16-bit Unicode character</td>
+            <td>U +0000 to U +ffff</td>
+            <td>'\0'</td>
+        </tr>
+
+        <tr>
+            <td>decimal</td>
+            <td>128-bit precise decimal values with 28-29 significant digits</td>
+            <td>(-7.9 x 10<sup>28</sup>
+               to 7.9 x 10<sup>28</sup>) / 10<sup>0</sup> to 28</td>
+            <td>0.0M</td>
+        </tr>
+
+        <tr>
+            <td>double</td>
+            <td>64-bit double-precision floating point type</td>
+            <td>(+/-)5.0 x 10<sup>-324 </sup> to (+/-)1.7 x 10<sup>308</sup></td>
+            <td>0.0D</td>
+        </tr>
+
+        <tr>
+            <td>float</td>
+            <td>32-bit single-precision floating point type</td>
+            <td>-3.4 x 10<sup>38</sup> to + 3.4 x 10<sup>38</sup></td>
+            <td>0.0F</td>
+        </tr>
+
+        <tr>
+            <td>int</td>
+            <td>32-bit signed integer type</td>
+            <td>-2,147,483,648 to 2,147,483,647</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>long</td>
+            <td>64-bit signed integer type</td>
+            <td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+            <td>0.0L</td>
+        </tr>
+
+       <tr>
+           <td>sbyte</td>
+           <td>8-bit signed integer type</td>
+           <td>-128 to 127</td>
+           <td>0</td>
+       </tr>
+
+       <tr>
+           <td>short</td>
+           <td>16-bit signed integer type</td>
+           <td>-32,768 to 32,767</td>
+           <td>0</td>
+       </tr>
+
+
+       <tr>
+           <td>uint</td>
+           <td>32-bit unsigned integer type</td>
+           <td>0 to 4,294,967,295</td>
+           <td>0</td>
+       </tr>
+
+       <tr>
+           <td>ulong</td>
+           <td>64-bit unsigned integer type</td>
+           <td>0 to 18,446,744,073,709,551,615</td>
+           <td>0</td>
+       </tr>
+
+       <tr>
+           <td>ushort</td>
+           <td>16-bit unsigned integer type</td>
+           <td>0 to 65,535</td>
+           <td>0</td>
+       </tr>
+    </table>
+
+
+    <p>the <b>reference</b> types types do not contain the actual data stored in a variable,
+         but they contain a reference to the variables.
+
+        In other words, they refer to a memory location. Using multiple variables, the reference 
+        types can refer to a memory location. If the data in the memory location is changed by one of the variables, 
+        the other variable automatically reflects this change in value. Example of built-in reference types are: 
+        object, dynamic, and string.
+    </p>
+
+
+    <p>
+        The Object Type is the ultimate base class for all data types in C# Common Type System (CTS). Object is an alias for System.Object class.
+         The object types can be assigned values of any other types, value types, reference types, predefined or user-defined types. However, 
+         before assigning values, it needs type conversion. When a value type is converted to object type, it is called boxing and on the other hand,
+        when an object type is converted to a value type, it is called unboxing.
+    </p>
+ 
+    <code>
+        object obj;
+        obj = 100; // this is boxing
+    </code>
+
+    <p>
+        You can store any type of value in the dynamic data type variable. Type checking for these types of 
+        variables takes place at run-time. For example 
+    </p>
+    <code>
+        dynamic d = 20;
+    </code>
+
+    <p>
+        The String Type allows you to assign any string values to a variable. The string type is an alias for the System.String class. It is derived 
+        from object type. The value for a string type can be assigned using string literals in two forms: quoted and @quoted.
+    </p>
+
+     <code>
+        String str = "Tutorials Point";
+        @"Tutorials Point";
+     </code>
+
+     <p>
+        Pointer type variables store the memory address of another type. Pointers in C# have the same capabilities as the pointers in C or C++.
+        Syntax for declaring a pointer type is −
+     </p>
+
+     <code>
+        char* cptr;
+        int* iptr;
+     </code>
+    </article>
+</section>
+
+
+
+
+<section class="main-section" id="if_else_statement">
+    <header>if else statement</header>
+    <article>
+        <p>
+            An if statement can be followed by an optional else statement, which executes when the boolean expression is false.
+            The syntax of an if...else statement in C# is −
+        </p>
+
+        <code>
+            if(boolean_expression) {
+                /* statement(s) will execute if the boolean expression is true */
+             } else {
+                /* statement(s) will execute if the boolean expression is false */
+             }
+        </code>
+
+        <p>
+            If the boolean expression evaluates to true, then the if block of code is executed, otherwise else block of code is executed. For example
+        </p>
+       
+        <code>
+using System;
+
+namespace DecisionMaking {
+   class Program {
+      static void Main(string[] args) {
+         /* local variable definition */
+         int a = 100;
+         
+         /* check the boolean condition */
+         if (a < 20) {
+            /* if condition is true then print the following */
+            Console.WriteLine("a is less than 20");
+         } else {
+            /* if condition is false then print the following */
+            Console.WriteLine("a is not less than 20");
+         }
+         Console.WriteLine("value of a is : {0}", a);
+         Console.ReadLine();
+      }
+   }
+}
+        </code>
+    
+        <p>
+            When the above code is compiled and executed, it produces the following result −
+        </p>
+
+        <code>
+            a is not less than 20;
+            value of a is : 100
+        </code>
+    </article>
+    
+</section>
+
+
+
+
+
+<section class="main-section" id="while_statement">
+    <header>while statement</header>
+    <article>
+    <p>
+        A while loop statement in C# repeatedly executes a target statement as long as a given condition is true.
+        The syntax of a while loop in C# is −
+    </p>
+
+    <code>
+        while(condition) {
+            statement(s);
+         }
+    </code>
+
+   <p>for example</p>
+    <code>
+using System;
+
+namespace Loops {
+   class Program {
+      static void Main(string[] args) {
+         /* local variable definition */
+         int a = 10;
+
+         /* while loop execution */
+         while (a < 20) {
+            Console.WriteLine("value of a: {0}", a);
+            a++;
+         }
+         Console.ReadLine();
+      }
+   }
+} 
+    </code>
+
+    <p>When the above code is compiled and executed, it produces the following result −</p>
+    <code>
+        value of a: 10
+        value of a: 11
+        value of a: 12
+        value of a: 13
+        value of a: 14
+        value of a: 15
+        value of a: 16
+        value of a: 17
+        value of a: 18
+        value of a: 19
+    </code>
+</article>
+</section>
+
+
+
+
+
+<section class="main-section" id="for_statement">
+    <header>for statement</header>
+    <article>
+        <p>
+            A for loop is a repetition control structure that allows you to efficiently 
+            write a loop that needs to execute a specific number of times.The syntax of a for loop in C# is −
+        </p>
+        <code>
+            for ( init; condition; increment ) {
+                statement(s);
+             }
+        </code>
+        <p>look at the example below</p>
+        <code>
+using System;
+
+namespace Loops {
+   class Program {
+      static void Main(string[] args) {
+         
+         /* for loop execution */
+         for (int a = 10; a < 20; a = a + 1) {
+            Console.WriteLine("value of a: {0}", a);
+         }
+         Console.ReadLine();
+      }
+   }
+} 
+        </code>
+
+        <p>When the above code is compiled and executed, it produces the following result −</p>
+        <code>
+            value of a: 10
+            value of a: 11
+            value of a: 12
+            value of a: 13
+            value of a: 14
+            value of a: 15
+            value of a: 16
+            value of a: 17
+            value of a: 18
+            value of a: 19
+        </code>
+    </article>
+</section>
+
+
+
+<section class="main-section" id="Function_declarations">
+    <header>Function declarations</header>
+    <article>
+        <p>
+            When you define a method, you basically declare the elements of its structure. 
+            The syntax for defining a method in C# is as follows −
+        </p>
+
+        <code>
+            class NumberManipulator {
+
+                public int FindMax(int num1, int num2) {
+                   /* local variable declaration */
+                   int result;
+             
+                   if (num1 > num2)
+                      result = num1;
+                   else
+                      result = num2;
+             
+                   return result;
+                }
+                ...
+             }
+        </code>
+    </article>
+    
+</section>
+
+
+
+
+<section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+        <p>
+            All the documentation in this page is taken from 
+            <a href="https://www.tutorialspoint.com/csharp/" target="_blank"> C# Tutorial </a>
+        </p>
+    </article>
+    
+</section>
+
+
+
+
+</main>
+</body>
+</html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+
+
+
+
+
+
+
+
