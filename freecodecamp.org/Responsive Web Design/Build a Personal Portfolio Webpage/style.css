@@ -107,3 +107,9 @@ footer{
     padding: 0.5em; 
     text-align: center;
 }
+
+@media(max-width: 500px){
+    section{
+        padding: 1rem;
+    }
+}
