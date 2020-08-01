@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(237, 184, 121);
+    margin: 0;
+}
+
+nav{
+    background-color: brown;
+    color: rgb(204, 231, 232);
+    padding: 1.5em;
+    display: flex; 
+    justify-content: flex-end;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header{
+    color: white; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; 
+    background-image: url(https://images.yourstory.com/cs/wordpress/2018/03/coding-job.png);
+    background-size: cover; 
+    position: relative; 
+}
+
+header h1{
+    font-size: 3rem;
+
+}
+
+header p{
+    font-size: 1.5em;
+    
+}
+
+
+nav a{
+    color: rgb(204, 231, 232);
+    margin-right: 20px; 
+    text-decoration: none;
+}
+
+.projects-container{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50rem;
+    margin: auto;
+
+}
+
+.project-tile{
+    margin: 1rem;
+    max-width: 20rem;
+}
+
+
+.project-tile img{
+    max-width: 100%;
+}
+
+
+section{
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+
+.background-styling{
+    background-color: darkgrey;
+    color: darkmagenta;
+}
+
+.contact-link{
+    list-style-type: none;
+    display:flex; 
+    justify-content: center;
+    margin: 0;
+    padding: 0; 
+}
+
+
+.contact-link a {
+    
+   font-size: 2rem;
+   margin: 0 1rem;
+   color: darkviolet; 
+}
+
+
+
+footer{
+    background-color:brown;
+    color: rgb(204, 231, 232); 
+    padding: 0.5em; 
+    text-align: center;
+}
